@@ -16,7 +16,8 @@ Cuando ejecutas el archivo `ovidio_rodriguez_proyectoM4 te pide el nombre de un 
 
 Si el nombre esta mal escrito o no existe, muestra un mensaje de error.
 
-En mi caso no soy fan de los pokemons entonces tuve que buscar en google los nombres de pokemons
+En mi caso no soy fan de los pokemons entonces tuve que buscar en google los nombres de pokemons y encontre estos:
+Algunos nombres de Pokémon son Pikachu, Charizard, Mewtwo, Eevee, Gengar, Mew, Snorlax y Onix
 
 ## ¿Que bibliotecas usa?  no olvidar instalarla, al principio di las instrucciones
 
