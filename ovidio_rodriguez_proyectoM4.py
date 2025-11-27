@@ -1,4 +1,7 @@
-# Importamos la libreria requests para poder consumir la pokeapi
+# Importamos la libreria requests para poder consumir la pokeapi, se instala 
+# en la terminarl de visual Stuido code con el siguiente: pip install requests
+# Instalar la libreria en el mismo folder donde guardaras este archivo.
+
 import requests
 import os
 import json
@@ -7,22 +10,28 @@ import json
 if not os.path.exists("pokedex"):
     os.mkdir("pokedex")
 
-# Funcion que extrae los tipos
 def obtener_tipos(data):
+    '''
+    Funcion que extrae los tipos
+    '''
     tipos = []
     for tipo in data["types"]:
         tipos.append(tipo["type"]["name"])
     return tipos
 
-# Funcion que extrae las habilidades
 def obtener_habilidades(data):
+    '''
+    Funcion que extrae las habilidades
+    '''
     habilidades = []
     for hab in data["abilities"]:
         habilidades.append(hab["ability"]["name"])
     return habilidades
 
-# Funcion que extrae los movimientos
 def obtener_movimientos(data):
+    '''
+    Funcion que extrae los movimientos
+    '''
     movimientos = []
     for mov in data["moves"]:
         movimientos.append(mov["move"]["name"])
@@ -30,7 +39,9 @@ def obtener_movimientos(data):
 
 # Funcion principal que busca un pokemon
 def buscar_pokemon(nombre):
-    # Creamos la url con el nombre que escriba el usuario, la url para acceder al API es: https://pokeapi.co/
+    ''' 
+    Creamos la url con el nombre que escriba el usuario, la url para acceder al API es: https://pokeapi.co/
+    '''
     url = "https://pokeapi.co/api/v2/pokemon/" + nombre.lower()
 
     # Hacemos la peticion GET
