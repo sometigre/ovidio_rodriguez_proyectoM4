@@ -80,6 +80,7 @@ def buscar_pokemon(nombre):
     else:
         print("Error: No se encontro el pokemon o hubo un problema con la API")
 
-# Pedimos al usuario que escriba el nombre
+# Pedimos al usuario que escriba el nombre de un Pokemon, si no conoces algunos buscalos en google :)
+# En lo personal no conosco ninguno, le pregunte a mis hijos.
 nombre_pokemon = input("Escribe el nombre del Pokemon que quieres buscar: ")
 buscar_pokemon(nombre_pokemon)
